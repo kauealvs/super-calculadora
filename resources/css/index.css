@@ -1,0 +1,84 @@
+/* RESET CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body, inputs{
+    font-size: 18px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    font-family: 'Lato', Arial, Helvetica, sans-serif; 
+    overflow: hidden;
+}
+
+/* NAVBAR */
+
+nav{
+    background-color: blueviolet;
+}
+
+/* REUTILIZÁVEIS */
+
+h1 {
+    padding-top:2%;
+    color: white;
+    border-bottom: 2px solid;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    padding-top:1%;
+    color: blueviolet;
+    border-top: 2px solid;
+    text-align: center;
+    font-size: ;
+    padding-bottom: 5%;
+    width: 100%;
+    font-weight: 100;    
+}
+
+.inputs{
+    margin-top: 3%;
+    color: blueviolet;
+    font-weight: bolder; 
+    padding-left: 5%;
+    padding-right:5%;
+    margin-bottom: 5%;
+}
+
+.inputs span{
+    margin-left: 50%;
+}
+
+/* INPUTS DE RESULTADOS */
+
+.results input{
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 8%;
+    border-bottom: solid 2px blueviolet;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.results span{
+    margin-left: 10%;
+    margin-right: 5%;
+    color:grey;
+}
+
+
+.results input:focus{
+    outline: none;
+}
+
+.border{
+    border-bottom: solid 2px blueviolet ;
+}
+
