@@ -3,25 +3,56 @@
 var numbA = document.querySelector('.inputA');
 var numbB = document.querySelector('.inputB');
 
-var sum = document.querySelector("[id='sum']");
-var percent = document.querySelector("[id='percent']");
-var mult = document.querySelector("[id='mult']");
-var factorialA = document.querySelector("[id='factorialA']");
-var factorialB = document.querySelector("[id='factorialB']");
-var divider = document.querySelector("[id='divider']");
-var dividerB = document.querySelector("[id='dividerB']");
-var squareA = document.querySelector("[id='squareA']");
-var squareB = document.querySelector("[id='squareB']");
-var dividerIntA = document.querySelector("[id='dividerIntA']");
-var dividerIntB = document.querySelector("[id='dividerIntB']");
-var subA = document.querySelector("[id='subA']");
-var subB = document.querySelector("[id='subB']");
+// var results = document.querySelector('.results');
+// var resultsArray = document.querySelectorAll('.results');
+var sum = document.querySelector('.sum');
+var percent = document.querySelector('.percent');
+var mult = document.querySelector('.mult');
+var factorialA = document.querySelector('.factorialA');
+var factorialB = document.querySelector('.factorialB');
+var divider = document.querySelector('.divider');
+var dividerB = document.querySelector('.dividerB');
+var squareA = document.querySelector('.squareA');
+var squareB = document.querySelector('.squareB');
+var dividerIntA = document.querySelector('.dividerIntA');
+var dividerIntB = document.querySelector('.dividerIntB');
+var subA = document.querySelector('.subA');
+var subB = document.querySelector('.subB');
+var sumId = document.querySelector('#sum');
+var percentId = document.querySelector('#percent');
+var multId = document.querySelector('#mult');
+var factorialAId = document.querySelector('#factorialA');
+var factorialBId = document.querySelector('#factorialB');
+var dividerId = document.querySelector('#divider');
+var dividerBId = document.querySelector('#dividerB');
+var squareAId = document.querySelector('#squareA');
+var squareBId = document.querySelector('#squareB');
+var dividerIntAId = document.querySelector('#dividerIntA');
+var dividerIntBId = document.querySelector('#dividerIntB');
+var subAId = document.querySelector('#subA');
+var subBId = document.querySelector('#subB');
 
 
 function start() {
 
     numbA.addEventListener('input', inputA)    
     numbB.addEventListener('input', inputB);
+    // resultsArray = Array.from(resultsArray);
+    // if (screen.width<=480) {
+    //     sum.remove();
+    //     percent.remove()
+    //     mult.remove()
+    //     factorialA.remove()
+    //     factorialB.remove()
+    //     divider.remove()
+    //     dividerB.remove()
+    //     squareA.remove()
+    //     squareB.remove()
+    //     dividerIntA.remove()
+    //     dividerIntB.remove()
+    //     subA.remove() 
+    //     subB.remove() 
+    //     }
 
 };
 
@@ -42,7 +73,11 @@ function calculate() {
         
     numA = parseInt(numbA.value, 10);
     numB = parseInt(numbB.value, 10);
-    
+
+    // if(screen.width<=480) {
+    //     return console.log('tela menor');
+        
+    // }
     sum.value = soma(numA, numB);
     percent.value = porcentagem(numA, numB);
     mult.value = multiplicacao(numA, numB);
@@ -56,6 +91,21 @@ function calculate() {
     dividerIntB.value = divisoresInteirosB(numB);
     subA.value = subtracao(numA, numB);
     subB.value = subtracao2(numA, numB);
+
+    sumId.value = soma(numA, numB);
+    percentId.value = porcentagem(numA, numB);
+    multId.value = multiplicacao(numA, numB);
+    factorialAId.value = fatorialA(numA);
+    factorialBId.value = fatorialB(numB);
+    squareAId.value = quadradoA(numA);
+    squareBId.value = quadradoB(numB);
+    dividerId.value = divisao(numA, numB);
+    dividerBId.value = divisao2(numA, numB);
+    dividerIntAId.value = divisoresInteirosA(numA);
+    dividerIntBId.value = divisoresInteirosB(numB);
+    subAId.value = subtracao(numA, numB);
+    subBId.value = subtracao2(numA, numB);
+    
 };
 
 
