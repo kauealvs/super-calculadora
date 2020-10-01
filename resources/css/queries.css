@@ -1,5 +1,16 @@
 @media only screen and (max-width: 480px){
-    .results input{
+
+    .results span, .results input{
+
+        display: none;
+
+    }
+
+    nav h1{
+        font-size: 32px;
+    }
+
+    .resultsMobile input{
         margin-left: 10%;
         margin-right: 5%;
         margin-bottom: 8%;
@@ -11,7 +22,7 @@
        
     }
     
-    .results span{
+    .resultsMobile span{
         font-size: 12px;
         margin-left: 10%;
         margin-right: 5%;
@@ -25,6 +36,96 @@
     .inputs span {
         font-size: 12px;
     }
+ 
+    .resultsMobile span, .resultsMobile input{
+        display: inline-block;
+    }
+}
 
+@media only screen and (max-width: 360px){
+
+    .results span, .results input{
+
+        display: none;
+
+    }
+
+    nav h1{
+        font-size: 32px;
+    }
+
+    .resultsMobile input{
+        margin-left: 10%;
+        margin-right: 5%;
+        margin-bottom: 8%;
+        border-bottom: solid 2px blueviolet;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 70%;
+       
+    }
     
+    .resultsMobile span{
+        font-size: 12px;
+        margin-left: 10%;
+        margin-right: 5%;
+        color:grey;
+    }
+
+    .inputs input {
+        font-size: 12px;
+    }
+
+    .inputs span {
+        font-size: 12px;
+    }
+ 
+    .resultsMobile span, .resultsMobile input{
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 320px){
+
+    .results span, .results input{
+
+        display: none;
+
+    }
+
+    nav h1{
+        font-size: 26px;
+    }
+
+    .resultsMobile input{
+        margin-left: 10%;
+        margin-right: 5%;
+        margin-bottom: 8%;
+        border-bottom: solid 2px blueviolet;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 70%;
+       
+    }
+    
+    .resultsMobile span{
+        font-size: 12px;
+        margin-left: 10%;
+        margin-right: 5%;
+        color:grey;
+    }
+
+    .inputs input {
+        font-size: 10px;
+    }
+
+    .inputs span {
+        font-size: 10px;
+    }
+ 
+    .resultsMobile span, .resultsMobile input{
+        display: inline-block;
+    }
 }

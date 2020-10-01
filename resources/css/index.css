@@ -69,6 +69,10 @@ h2 {
    
 }
 
+.resultsMobile span, .resultsMobile input{
+    display: none;
+}
+
 .results span{
     
     margin-left: 10%;
