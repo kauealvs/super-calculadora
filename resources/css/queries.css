@@ -1,0 +1,30 @@
+@media only screen and (max-width: 480px){
+    .results input{
+        margin-left: 10%;
+        margin-right: 5%;
+        margin-bottom: 8%;
+        border-bottom: solid 2px blueviolet;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 70%;
+       
+    }
+    
+    .results span{
+        font-size: 12px;
+        margin-left: 10%;
+        margin-right: 5%;
+        color:grey;
+    }
+
+    .inputs input {
+        font-size: 12px;
+    }
+
+    .inputs span {
+        font-size: 12px;
+    }
+
+    
+}
