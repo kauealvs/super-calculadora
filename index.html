@@ -10,7 +10,7 @@
     <title>Super calculadora</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class ="container-fluid">
         <header>
             
             <nav>
@@ -22,11 +22,11 @@
         <div class="row inputs">
             <div class="col xl-2">
                 <span>Número A</span>
-                <input class="form-control" type="number" placeholder="Insira um número">
+                <input class="form-control inputA" type="number" name="numA" value="" placeholder="Insira um número">
             </div>
             <div class="col xl-2">
                 <span>Número B</span>
-                <input class="form-control" type="number" placeholder="Insira um número">
+                <input class="form-control inputB" type="number" name="numB" value=""  placeholder="Insira um número">
             </div>
         </div>
 
@@ -37,15 +37,15 @@
         <div class="row results">
             <div class="col xl-4">
                 <span>Soma (A + B)</span>
-                <input type="text" readonly>
+                <input type="text"  id="sum" readonly>
             </div>
             <div class="col xl-4">
                 <span>Porcentagem de A por B (A % B)</span>
-                <input type="text" readonly>
+                <input type="text" id="percent" readonly>
             </div>
             <div class="col xl-4">
                 <span>Multiplicação (A x B)</span>
-                <input type="text" readonly>
+                <input type="text" id="mult"  readonly>
             </div>
             
         </div>
@@ -53,53 +53,53 @@
         <div class="row results">
             <div class="col xl-4">
                 <span>Divisão (A / B)</span>
-                <input type="text" readonly>
+                <input type="text" id="divider"  readonly>
             </div>
             <div class="col xl-4">
                 <span>Fatorial (A)</span>
-                <input type="text" readonly>
+                <input type="text" id="factorialA" readonly>
             </div>
             <div class="col xl-4">
                 <span>Fatorial (B)</span>
-                <input type="text" readonly>
+                <input type="text" id="factorialB" readonly>
             </div>   
         </div>
 
         <div class="row results">
             <div class="col xl-4">
                 <span>Raíz quadrada(A²)</span>
-                <input type="text" readonly>
+                <input type="text" id="squareA" readonly>
             </div>
             <div class="col xl-4">
                 <span>Raíz quadrada(B²)</span>
-                <input type="text" readonly>
+                <input type="text" id="squareB" readonly>
             </div>
             <div class="col xl-4">
                 <span>Divisão 2 (B / A)</span>
-                <input type="text" readonly>
+                <input type="text" id="dividerB" readonly>
             </div>
         </div>
         <div class="row results">
             <div class="col xl-4">
                 <span>Subtração (A - B)</span>
-                <input type="text" readonly>
+                <input type="text" id="subA" readonly>
             </div>
             <div class="col xl-4">
                 <span>Divisores inteiros (A)</span>
-                <input type="text" readonly>
+                <input type="text" id="dividerIntA" readonly>
             </div>
             <div class="col xl-4">
                 <span>Divisores inteiros (B)</span>
-                <input type="text" readonly>
+                <input type="text" id="dividerIntB" readonly>
             </div>
         </div>
         <div class="row results">
             <div class="col-4">
                 <span>Subtração 2 (B - A)</span>
-                <input type="text" readonly>
+                <input type="text" id="subB" readonly>
             </div>
         </div>
     </div>
 </body>
-<script src="./resources/js/index.js"></script>
+<script defer src="./resources/js/index.js"></script>
 </html>
